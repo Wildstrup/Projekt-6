@@ -2,24 +2,23 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 nav{
   display: flex;
-  justify-content: left; /* Skal muligvis ændres til left-allign. */
+justify-content: space-around;/* Skal muligvis ændres til left-allign. */
   align-items: center;
   min-height: 8vh;
   background-color: #f3f3f5;
-  font-family: "roboto", sans-serif;
   border-bottom: solid #2f393f;
 
 }
 
 .logo{
-  color: #EEEEEE;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: 20px;
+  height: 6vh;
+  display: flex;
+  padding-right: 19vw;
 }
 
 
@@ -38,17 +37,19 @@ nav{
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 12pt;
 }
 
 .burger{
+  justify-content: left;
   display: none;
   cursor: pointer;
+  padding-right: 20vw;
 }
 
 .burger div{
-  width: 25px;
-  height: 3px;
+  width: 8vw;
+  height: 0.6vh;
   background-color: #2f393f;
   margin: 5px;
   transition: transform 0.1s ease;
