@@ -1,408 +1,49 @@
-*{
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-}
-
-nav{
-  display: flex;
-  justify-content: space-around;/* Skal muligvis ændres til left-allign. */
-  align-items: center;
-  min-height: 8vh;
-  background-color: #f3f3f5;
-  border-bottom: solid #2f393f;
-
-
-}
-
-.logo{
-  height: 6vh;
-  display: flex;
-  margin-right: 19.5vw;
-}
-
-
-.nav-links{
-  display: flex;
-  justify-content: space-around; /* Skal muligvis ændres til left-allign. */
-  width: 30%;
-  z-index: 1;
-}
-
-.nav-links li{
-  list-style: none;
-}
-
-
-.nav-links a{
-  color: #2f393f;
-  text-decoration: none;
-  letter-spacing: 3px;
+h1{
+  text-align: center;
+  font-size: 1.75em;
+  margin: 1vh 0;
   font-weight: bold;
-  font-size: 12pt;
-
+}
+.border{
+  margin: auto;
+  width: 100%;
+  height: 3px;
+  background-color: black;
 }
 
-.burger{
-  justify-content: left;
-  display: none;
+.collapsible {
+  background-color: #f3f3f5;
+  color: #2f393f;
   cursor: pointer;
-  margin-right: 20vw;
-}
-
-.burger div{
-  width: 8vw;
-  height: 0.6vh;
-  background-color: #2f393f;
-  margin: 5px;
-  transition: transform 0.1s ease;
-}
-
-
-#section1{
-  margin: 0;
-  width: 100vw;
-  height: 23vh;
-}
-
-#section1 img{
- width: 100vw;
- height: 23vh;
- border-bottom: solid #ed5822;
-}
-
-#section1 .btn{
-  position: absolute;
-  top: 19vh;
-  left: 50vw;
-  transform: translate(-50%, -50%);
-  /* rgba "a" står for alpha*/
-  background-color: rgba(07,12,24,0.8);
-  color: #f3f3f5;
-  font-size: 16px;
-  padding: 2vh 10vw;
+  padding: 18px;
+  margin-top: 10px;
+  width: 100%;
   border: none;
-  cursor: pointer;
-  border-radius: 5px;
+  text-align: left;
+  outline: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  border-top: solid 3px;
+  border-bottom: solid 3px;
 }
 
 
-
-#section2{
-  margin: 0;
-  width: 100vw;
-  height: 23vh;
+.collapsible:after {
+  content: '\002B'; /* unicode symbol for "plus" tegn (+) */
+  color: #2f393f;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
 }
 
-#section2 img{
- width: 100vw;
- height: 23vh;
- border-bottom: solid #ed5822;
+.active:after {
+  content: "\2212"; /* unicode symbol for "minus" tegn (-) */
 }
 
-#section2 .btn{
-  position: absolute;
-  top: 42vh;
-  left: 50vw;
-  transform: translate(-50%, -50%);
-  background-color: rgba(07,12,24,0.8); /* rgba "a" står for alpha*/
-  color: #f3f3f5;
-  font-size: 16px;
-  padding: 2vh 10vw;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-#section3{
-  margin: 0;
-  width: 100vw;
-  height: 23vh;
-}
-
-#section3 img{
- width: 100vw;
- height: 23vh;
- border-bottom: solid #ed5822;
-}
-
-#section3 .btn{
-  position: absolute;
-  top: 65vh;
-  left: 50vw;
-  transform: translate(-50%, -50%);
-  /* rgba "a" står for alpha*/
-  background-color: rgba(07,12,24,0.8);
-  color: #f3f3f5;
-  font-size: 16px;
-  padding: 2vh 10vw;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-
-}
-
-#section4{
-  margin: 0;
-  width: 100vw;
-  height: 23vh;
-}
-
-#section4 img{
- width: 100vw;
- height: 23vh;
-}
-
-#section4 .btn{
-  position: absolute;
-  top: 88vh;
-  left: 50vw;
-  transform: translate(-50%, -50%);
-  /* rgba "a" står for alpha*/
-  background-color: rgba(07,12,24,0.8);
-  color: #f3f3f5;
-  font-size: 16px;
-  padding: 2vh 10vw;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-
-}
-
-
-@media screen and (min-width:1px){
-  body{
-    overflow-x: hidden;
-  }
-  .nav-links{
-    position: fixed;
-    left: 0px;
-    height: 92vh;
-    top: 8vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 70%;
-    transform: translateX(-100%);
-/*skaber en fade effect når burger menu åbnes*/
-    transition: all 0.2s ease-in;
-    border-right: solid #2f393f;
-    background-color: #f3f3f5;
-
-  }
-
-  .burger{
-    display: block;
-  }
-
-  .burger div{
-    width: 40px;
-    height: 5px;
-    background-color: #2f393f;
-    margin:6px;
-    transition: transform 0.1s ease;
-  }
-
-.nav-active{
-  transform: translateX(0%);
-  /*gør ul usynlig når man minimere og maksimere vinude*/
-  color: #f3f3f5;
-  transition: all 0.2s ease-in;
-}
-
-@keyframes navLinkFade {
-  from{
-      opacity: 0;
-      transform: translateX(-50px);
-  }
-  to{
-      opacity: 1;
-      transform: translateX(0px);
-  }
-}
-
-.toggle .line1{
-  transform: rotate(-45deg) translate(-5.5px,7px);
-}
-
-.toggle .line2{
-  opacity: 0;
-}
-
-.toggle .line3{
-  transform: rotate(45deg) translate(-5.5px,-7px);
-}
-
-}
-
-
-@media screen and (min-width:551px){
-  body{
-    overflow-x: hidden;
-  }
-
-  .logo{
-    height: 6vh;
-    display: flex;
-    margin-right: 20vw;
-  }
-
-  .nav-links{
-    position: fixed;
-    left: 0px;
-    height: 92vh;
-    top: 8vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 70%;
-    transform: translateX(-100%);
-/*skaber en fade effect når burger menu åbnes*/
-    transition: all 0.2s ease-in;
-    border-right: solid #2f393f;
-    background-color: #f3f3f5;
-  }
-
-  .nav-links a{
-    color: #2f393f;
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 16pt;
-
-  }
-
-  .burger{
-    display: block;
-  }
-
-  .burger div{
-    width: 50px;
-    height: 6px;
-    background-color: #2f393f;
-    margin:6px;
-    transition: transform 0.1s ease;
-  }
-
-.nav-active{
-  transform: translateX(0%);
-  /*gør ul usynlig når man minimere og maksimere vinude*/
-  color: #f3f3f5;
-  transition: all 0.2s ease-in;
-}
-
-@keyframes navLinkFade {
-  from{
-      opacity: 0;
-      transform: translateX(-50px);
-  }
-  to{
-      opacity: 1;
-      transform: translateX(0px);
-  }
-}
-
-.toggle .line1{
-  transform: rotate(-45deg) translate(-5.5px,7px);
-}
-
-.toggle .line2{
-  opacity: 0;
-}
-
-.toggle .line3{
-  transform: rotate(45deg) translate(-5.5px,-7px);
-}
-
-}
-
-
-@media screen and (min-width:850px){
-  body{
-    overflow-x: hidden;
-  }
-
-  .logo{
-    height: 6vh;
-    display: flex;
-    margin-right: 20vw;
-  }
-
-  .nav-links{
-    position: fixed;
-    left: 0px;
-    height: 92vh;
-    top: 8vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 70%;
-    transform: translateX(-100%);
-/*skaber en fade effect når burger menu åbnes*/
-    transition: all 0.2s ease-in;
-    border-right: solid #2f393f;
-    background-color: #f3f3f5;
-  }
-
-  .nav-links a{
-    color: #2f393f;
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 16pt;
-
-  }
-
-  .burger{
-    display: block;
-  }
-
-  .burger div{
-    width: 70px;
-    height: 9px;
-    background-color: #2f393f;
-    margin:9px;
-    transition: transform 0.1s ease;
-  }
-
-.nav-active{
-  transform: translateX(0%);
-  /*gør ul usynlig når man minimere og maksimere vinude*/
-  color: #f3f3f5;
-  transition: all 0.2s ease-in;
-}
-
-@keyframes navLinkFade {
-  from{
-      opacity: 0;
-      transform: translateX(-50px);
-  }
-  to{
-      opacity: 1;
-      transform: translateX(0px);
-  }
-}
-
-.toggle .line1{
-  transform: rotate(-45deg) translate(-5.5px,7px);
-}
-
-.toggle .line2{
-  opacity: 0;
-}
-
-.toggle .line3{
-  transform: rotate(45deg) translate(-5.5px,-7px);
-}
-
-}
-
-
-@media screen and (min-width:1100px){
-  .nav-links{
-    width: 60%;
-
-  }
-
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
 }
