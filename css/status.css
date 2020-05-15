@@ -43,7 +43,7 @@ h1{
 }
 
 .content {
-  padding: 0 18px;
+  padding: 0;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -54,6 +54,70 @@ h1{
   margin-top: 1.5vh;
 }
 
+.content .auto{
+ background-color: #ed5822;
+ padding: 1vh 4vw;
+ border-radius: 13px;
+ text-align: center;
+ font-size: 1em;
+ color: #f3f3f5;
+ border-style: none;
+ margin-left: 23vw;
+ margin-top: 2vh;
+}
+
+.content .manu{
+ background-color: #ed5822;
+ padding: 1vh 4vw;
+ border-radius: 13px;
+ text-align: center;
+ font-size: 1em;
+ color: #f3f3f5;
+ border-style: none;
+ margin-left: 27vw;
+ margin-top: 2vh;
+}
+
+
 .sec2{
   margin-top: 1.5vh;
+}
+
+.sec2 .content {
+  display: flex;
+  justify-content: space-between;
+  grid-column: 1 /-1;
+}
+
+.sec2 .content .enhed{
+  width: 70vw;
+  height: 8vh;
+  background-color: white;
+  margin-top: 1.5vh;
+  margin-left: 5vw;
+  text-align: left;
+  padding-top: 2.50vh;
+  padding-left: 2vw;
+  font-size: 1.125em;
+  color: #2f393f;
+  border: solid 1.5px #2f393f;
+  border-right: none;
+
+}
+
+.sec2 .content .icon{
+  width: 20vw;
+  height: 8vh;
+  background-color: white;
+  margin-top: 1.5vh;
+  margin-right: 5vw;
+  text-align: center;
+  padding-top: 2.75vh;
+  color: #2f393f;
+  border: solid 1.5px #2f393f;
+
+}
+
+.sec2 .content .icon{
+
 }
