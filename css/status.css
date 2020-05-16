@@ -86,11 +86,12 @@ h1{
 .sec2 .content {
   display: flex;
   justify-content: space-between;
-  grid-column: 1 /-1;
+  grid-column: 1/-1;
 }
 
+
 .sec2 .content .enhed{
-  width: 70vw;
+  width: 80vw;
   height: 8vh;
   background-color: white;
   margin-top: 1.5vh;
@@ -106,7 +107,7 @@ h1{
 }
 
 .sec2 .content .icon{
-  width: 20vw;
+  width: 15vw;
   height: 8vh;
   background-color: white;
   margin-top: 1.5vh;
@@ -115,9 +116,4 @@ h1{
   padding-top: 2.75vh;
   color: #2f393f;
   border: solid 1.5px #2f393f;
-
-}
-
-.sec2 .content .icon{
-
 }
