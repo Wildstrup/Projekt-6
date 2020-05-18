@@ -83,14 +83,15 @@ h1{
   margin-top: 1.5vh;
 }
 
-.sec2 .content {
+.sec2 .content{
   display: flex;
   justify-content: space-between;
   grid-column: 1/-1;
 }
 
 
-.sec2 .content .enhed{
+
+.sec2 .content .enhed, .enhed2{
   width: 80vw;
   height: 8vh;
   background-color: white;
@@ -106,7 +107,7 @@ h1{
 
 }
 
-.sec2 .content .icon{
+.sec2 .content .icon, .icon2{
   width: 15vw;
   height: 8vh;
   background-color: white;
