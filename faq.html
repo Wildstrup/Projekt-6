@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="js/collapsible.js" defer> </script>
     <script src="js/nav.js" defer></script>
+    <script src="js/popup.js" defer></script>
   <title>FAQ troubleshoot</title>
 </head>
 
@@ -131,9 +132,27 @@
             <textarea placeholder="Din besked"></textarea>
           </div>
         <!-- -->
-        <div class="form-btn">Send</div>
+
+
+        <!-- pop up -->
+        <button data-popup-target="#popup" class="form-btn">Send</button>
+        <div class="popup" id="popup">
+          <div class="popup-header">
+            <div class="title">Din bedsked er sendt</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="popup-body">
+            Tusind tak for din henvendelse, vi vender tilbage hurtigst muligt!
+            Der er mulighed for at kontakte os på +45 55-55-55-55 hvis det er akut.
+          </div>
         </div>
+        <div id="overlay"></div>
       </div>
+        </div>
+
+
+
+
 
 </main>
 
