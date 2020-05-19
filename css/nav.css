@@ -8,7 +8,6 @@
 nav {
   display: flex;
   justify-content: space-around;
-  /* Skal muligvis ændres til left-allign. */
   align-items: center;
   min-height: 8vh;
   background-color: #f3f3f5;
@@ -30,7 +29,6 @@ nav {
 .nav-links {
   display: flex;
   justify-content: space-around;
-  /* Skal muligvis ændres til left-allign. */
   width: 30%;
   z-index: 1;
 }
