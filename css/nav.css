@@ -12,6 +12,7 @@ nav {
   min-height: 8vh;
   background-color: #f3f3f5;
   border-bottom: solid #2f393f;
+
 }
 
 .logo {
@@ -84,9 +85,6 @@ nav {
 }
 
 @media screen and (max-width:800px) {
-  body {
-    overflow: hidden;
-  }
 
   .logo {
     display: none;
