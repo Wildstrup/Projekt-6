@@ -1,0 +1,106 @@
+#section1 {
+  margin: 0;
+  width: 100vw;
+  height: 23vh;
+}
+
+#section1 img {
+  width: 100vw;
+  height: 23vh;
+  border-bottom: solid #ed5822;
+}
+
+#section1 .btn {
+  position: absolute;
+  top: 19vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  /* rgba "a" står for alpha*/
+  background-color: rgba(07, 12, 24, 0.8);
+  color: #f3f3f5;
+  font-size: 16px;
+  padding: 2vh 10vw;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#section2 {
+  margin: 0;
+  width: 100vw;
+  height: 23vh;
+}
+
+#section2 img {
+  width: 100vw;
+  height: 23vh;
+  border-bottom: solid #ed5822;
+}
+
+#section2 .btn {
+  position: absolute;
+  top: 42vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  background-color: rgba(07, 12, 24, 0.8);
+  /* rgba "a" står for alpha*/
+  color: #f3f3f5;
+  font-size: 16px;
+  padding: 2vh 10vw;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#section3 {
+  margin: 0;
+  width: 100vw;
+  height: 23vh;
+}
+
+#section3 img {
+  width: 100vw;
+  height: 23vh;
+  border-bottom: solid #ed5822;
+}
+
+#section3 .btn {
+  position: absolute;
+  top: 65vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  /* rgba "a" står for alpha*/
+  background-color: rgba(07, 12, 24, 0.8);
+  color: #f3f3f5;
+  font-size: 16px;
+  padding: 2vh 10vw;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#section4 {
+  margin: 0;
+  width: 100vw;
+  height: 23vh;
+}
+
+#section4 img {
+  width: 100vw;
+  height: 23vh;
+}
+
+#section4 .btn {
+  position: absolute;
+  top: 88vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  /* rgba "a" står for alpha*/
+  background-color: rgba(07, 12, 24, 0.8);
+  color: #f3f3f5;
+  font-size: 16px;
+  padding: 2vh 10vw;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
