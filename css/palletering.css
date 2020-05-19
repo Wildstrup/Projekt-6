@@ -1,0 +1,44 @@
+.divider {
+  height: 1px;
+  width: 100vw;
+  background-color: black;
+  margin-top: 2vh;
+}
+
+.sec1{
+  margin-top: 1.5vh;
+}
+
+.sec1 .content{
+  display: grid;
+  width: 30%;
+}
+
+.sec1 .content .enhed{
+  width: 20vw;
+  height: 4vh;
+  background-color: white;
+  margin-top: 1.5vh;
+  margin-left: 2vw;
+  text-align: left;
+  padding-top: .75vh;
+  padding-left: 1vw;
+  font-size: 1em;
+  color: #2f393f;
+  border: solid 1.5px #2f393f;
+  border-right: none;
+  grid-column: 1;
+}
+
+.sec1 .content .icon{
+  width: 5vw;
+  height: 4vh;
+  background-color: white;
+  margin-top: 1.5vh;
+  margin-right: 5vw;
+  text-align: center;
+  padding-top: .75vh;
+  color: #2f393f;
+  border: solid 1.5px #2f393f;
+  grid-column: 2;
+}
