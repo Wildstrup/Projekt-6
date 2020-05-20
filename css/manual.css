@@ -10,13 +10,13 @@ h1 {
 }
 
 .container-slider {
-  width: 90%;
+  width: 80%;
   margin: 10px auto;
 }
 
 .carousel {
   border: 2px solid #ccc;
-  height: 400px;
+  height: 80vh;
   position: relative;
   overflow: hidden;
 }
@@ -25,7 +25,6 @@ h1 {
   height: 100%;
   display: flex;
   width: 400%;
-  border: 1px solid red;
   transition: all 0.3s;
 }
 
@@ -38,7 +37,7 @@ h1 {
 
 .controls .arrow {
   position: absolute;
-  top: 90%;
+  top: 75.8vh;
   transform: translateY(-50%);
   cursor: pointer;
 }
@@ -48,16 +47,16 @@ font-size: 40px;
 }
 
 .arrow.right {
-  left: 81vw;
+  right: 15vw;
 }
 
 .arrow.left {
-  left: 1vw;
+  left: 15vw;
 }
 
 .controls ul {
   position: absolute;
-  bottom: 20px;
+  bottom: 3vh;
   left: 50%;
   transform: translate(-50%);
   list-style: none;
@@ -67,13 +66,51 @@ font-size: 40px;
 .controls ul li {
   width: 20px;
   height: 20px;
-  border: 2px solid #333;
-  /* border-radius: 50px; Dette gør det til en cirkel*/
-  margin: 10px;
-  background: #333;
+  border: 3px solid #2f393f;
+  border-radius: 5px;
+  margin: 0 10px;
+  background: #f3f3f5;
   cursor: pointer;
 }
 
 .controls ul li.selected {
-  background: transparent;
+  background: #ed5822   ;
+}
+
+@media screen and (min-width:801px) {
+  .arrow.right {
+    right: 22vw;
+  }
+
+  .arrow.left {
+    left: 22vw;
+  }
+
+  .controls ul {
+    position: absolute;
+    bottom: 3vh;
+    left: 50%;
+    transform: translate(-50%);
+    list-style: none;
+    display: flex;
+  }
+}
+
+@media screen and (min-width:1001px) {
+  .arrow.right {
+    right: 26vw;
+  }
+
+  .arrow.left {
+    left: 26vw;
+  }
+
+  .controls ul {
+    position: absolute;
+    bottom: 3vh;
+    left: 50%;
+    transform: translate(-50%);
+    list-style: none;
+    display: flex;
+  }
 }
