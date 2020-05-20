@@ -1,32 +1,32 @@
+const left = document.querySelector('.left');
+const right = document.querySelector('.right');
+
 const slider = document.querySelector('.slider');
 
-const leftArrow = document.querySelector('.left');
-const rightArrow = document.querySelector('.right');
-const indicatorParents = document.querySelector('.controls ul');
+const indicatorParent = document.querySelector('.controls ul');
+const indicators = document.querySelectorAll('.controls li');
+index = 0;
 
-var sectionIndex = 0;
-
-function setIndex() {
-  document.querySelector('.controls .selected').classList.remove('.selected');
-  slider.style.transform = 'translate(' + (sectionIndex) * -25 + '%)';
-}
-
-document.querySelectorAll('.controls li').forEach(function(indicator, ind) {
-  indicator.addEventListener('click', function() {
-    sectionIndex = ind;
+indicators.forEach((indicator, i) => {
+  indicator.addEventListener('click', () => {
+    document.querySelector('.controls .selected').classList.remove('selected');
     indicator.classList.add('selected');
-    setIndex(sectionIndex);
+    slider.style.transform = 'translateX(' + (i) * -25 + '%)';
+    index = i;
+
   });
 });
 
-leftArrow.addEventListener('click', function() {
-  sectionIndex = (section > 0) ? sectionIndex - 1 : 0;
-  setIndex();
-  indicatorParents.children[sectionIndex].classList.add('selected');
+left.addEventListener('click', function() {
+  index = (index > 0) ? index -1 : 0;
+  document.querySelector('.controls .selected').classList.remove('selected');
+  indicatorParent.children[index].classList.add('selected');
+  slider.style.transform = 'translateX(' + (index) * -25 + '%)';
 });
 
-rightArrow.addEventListener('click', function() {
-  sectionIndex = (section < 3) ? sectionIndex + 1 : 3;
-  setIndex();
-  indicatorParents.children[sectionIndex].classList.add('selected');
+right.addEventListener('click', function() {
+  index = (index < 4 - 1) ? index+1 : 3;
+  document.querySelector('.controls .selected').classList.remove('selected');
+  indicatorParent.children[index].classList.add('selected');
+  slider.style.transform = 'translateX(' + (index) * -25 + '%)';
 });
