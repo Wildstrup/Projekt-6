@@ -197,7 +197,7 @@ body {
   border-radius: 5px;
 }
 
-.btn2{
+.btn2 {
   display: block;
   cursor: pointer;
   text-align: center;
@@ -213,5 +213,40 @@ body {
   text-decoration: none;
   }
 
-  /* Dette er skrifttyper */
-  
+/* Dette er skrifttyper */
+.indhold1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 4vh;
+  margin-left: 10vw;
+}
+
+.indholds1 {
+  font-size: 14px;
+  margin-left: 10vw;
+  margin-bottom: 3vh;
+}
+
+.indhold2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 10vw;
+}
+
+.indholds2 {
+  font-size: 14px;
+  margin-left: 10vw;
+  margin-bottom: 3vh;
+}
+
+.indhold3 {
+  font-size: 19px;
+  font-weight: bold;
+  margin-left: 10vw;
+}
+
+.indholds3 {
+  font-size: 14px;
+  margin-left: 10vw;
+  margin-bottom: 3vh;
+}
