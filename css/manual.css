@@ -31,13 +31,25 @@ h1 {
 .slider section {
   flex-basis: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
+
+.slider section .ptitel{
+  margin: 2%;
+  font-weight: bold;
+  font-size: 1.375em;
+}
+
+.slider section .ptext{
+  position: relative;
+  top: 7%;
+  margin-left: -30vw;
+  font-size: 1.125em;
+}
+
 
 .controls .arrow {
   position: absolute;
-  top: 75.8vh;
+  top: 75.2vh;
   transform: translateY(-50%);
   cursor: pointer;
 }
@@ -47,11 +59,11 @@ font-size: 40px;
 }
 
 .arrow.right {
-  right: 15vw;
+  right: 10vw;
 }
 
 .arrow.left {
-  left: 15vw;
+  left: 10vw;
 }
 
 .controls ul {
@@ -79,11 +91,11 @@ font-size: 40px;
 
 @media screen and (min-width:801px) {
   .arrow.right {
-    right: 22vw;
+    right: 24vw;
   }
 
   .arrow.left {
-    left: 22vw;
+    left: 24vw;
   }
 
   .controls ul {
