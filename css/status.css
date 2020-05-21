@@ -147,12 +147,12 @@ h1 {
     font-size: 1em;
     color: #f3f3f5;
     border-style: none;
-    margin: 4vh auto 0 28vw;
+    margin: 2vh auto 0 28vw;
 
   }
 
   .sec2 .content2 .enhed {
-    width: 70vw;
+    width: 80vw;
     height: 8vh;
     background-color: white;
     margin-top: 1.5vh;
@@ -172,15 +172,12 @@ h1 {
     height: 8vh;
     background-color: white;
     margin-top: 1.5vh;
-    margin-right: 1vw;
+    margin-right: 5vw;
     text-align: center;
     color: #2f393f;
     border: solid 1.5px #2f393f;
   }
 }
-
-}
-
 
 
 @media screen and (min-width:768px){
