@@ -94,11 +94,13 @@ body {
 }
 
 .colorbox .box1 {
+  border-radius: 10px;
   background-color: #f3f3f5;
   width: 25%;
   height: 10vh;
   margin-left: 10%;
   border: 2px solid black;
+  border-radius: 10px;
 }
 
 .colorbox .box1 P {
@@ -115,6 +117,7 @@ body {
   margin-left: 2.5%;
   border: 2px solid black;
   margin: -10vh 37.5%;
+  border-radius: 10px;
 }
 
 .colorbox .box2 P {
@@ -132,6 +135,7 @@ body {
   margin-left: 2.5%;
   border: 2px solid black;
   margin: -10vh 65%;
+  border-radius: 10px;
 }
 
 .colorbox .box3 P {
@@ -149,6 +153,7 @@ body {
   margin-left: 24%;
   border: 2px solid black;
   margin-top: 15vh;
+  border-radius: 10px;
 }
 
 .colorbox .box4 P {
@@ -166,6 +171,7 @@ body {
   margin-left: 51.5%;
   border: 2px solid black;
   margin-top: -10vh;
+  border-radius: 10px;
 }
 
 .colorbox .box5 P {
@@ -175,3 +181,37 @@ body {
   font-size: 1.5em;
   font-weight: bold;
 }
+
+/* Dette er Knapperne */
+.btn1 {
+  position: absolute;
+  top: 60vh;
+  left: 21vw;
+  transform: translate(-50%, -50%);
+  background-color: rgba(07, 18, 36, 0.8);
+  color: #f3f3f5;
+  font-size: 16px;
+  padding: 2vh 10vw;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn2{
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  font-size: 15pt;
+  width: 100px;
+  border: none;
+  border-radius: 2px;
+  background-color: #ed5822;
+  color: #f3f3f5;
+  padding: 10px;
+  margin: 10vh 40vw;
+  margin-bottom: 3vh;
+  text-decoration: none;
+  }
+
+  /* Dette er skrifttyper */
+  
