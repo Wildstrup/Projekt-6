@@ -266,6 +266,11 @@ textarea{
         clear: both;
     }
 
+    .faqat{
+      margin-left: 20vw;
+      margin-right: 20vw;
+    }
+
     .collapsible {
       background-color: #f3f3f5;
       color: #2f393f;

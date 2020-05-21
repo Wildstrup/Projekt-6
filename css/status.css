@@ -44,6 +44,16 @@ h1 {
 }
 
 .content {
+  grid-template-columns: 50% 50%;
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+.content2{
+  display: grid;
   padding: 0;
   max-height: 0;
   overflow: hidden;
@@ -56,6 +66,7 @@ h1 {
 }
 
 .content .auto {
+  display: block;
   background-color: #ed5822;
   padding: 1vh 4vw;
   border-radius: 13px;
@@ -63,11 +74,11 @@ h1 {
   font-size: 1em;
   color: #f3f3f5;
   border-style: none;
-  margin-left: 23vw;
-  margin-top: 2vh;
+  margin: 4vh auto 0 28vw;
 }
 
 .content .manu {
+  display: block;
   background-color: #ed5822;
   padding: 1vh 4vw;
   border-radius: 13px;
@@ -75,8 +86,7 @@ h1 {
   font-size: 1em;
   color: #f3f3f5;
   border-style: none;
-  margin-left: 27vw;
-  margin-top: 2vh;
+  margin:1vh auto 0 32vw;
 }
 
 .sec2 {
@@ -87,7 +97,7 @@ h1 {
   display: grid;
 }
 
-.sec2 .content .enhed {
+.sec2 .content2 .enhed {
   width: 75vw;
   height: 8vh;
   background-color: white;
@@ -103,15 +113,122 @@ h1 {
   grid-column: 1;
 }
 
-.sec2 .content .icon {
+.sec2 .content2 .icon {
   width: 15vw;
   height: 8vh;
   background-color: white;
   margin-top: 1.5vh;
   margin-right: 5vw;
   text-align: center;
-  padding-top: 2.75vh;
+  padding-top: 2vh;
   color: #2f393f;
   border: solid 1.5px #2f393f;
   grid-column: 2;
+}
+
+
+@media screen and (max-width:320px){
+  .content .auto {
+    background-color: #ed5822;
+    padding: 1vh 4vw;
+    border-radius: 13px;
+    text-align: center;
+    font-size: 1em;
+    color: #f3f3f5;
+    border-style: none;
+    margin: 4vh auto 0 24vw;
+  }
+
+  .content .manu {
+    background-color: #ed5822;
+    padding: 1vh 4vw;
+    border-radius: 13px;
+    text-align: center;
+    font-size: 1em;
+    color: #f3f3f5;
+    border-style: none;
+    margin: 4vh auto 0 28vw;
+
+  }
+
+  .sec2 .content2 .enhed {
+    width: 70vw;
+    height: 8vh;
+    background-color: white;
+    margin-top: 1.5vh;
+    margin-left: 5vw;
+    text-align: left;
+    padding-top: 2.50vh;
+    padding-left: 2vw;
+    font-size: 1.125em;
+    color: #2f393f;
+    border: solid 1.5px #2f393f;
+    border-right: none;
+    grid-column: 1;
+  }
+
+  .sec2 .content2 .icon {
+    width: 10vw;
+    height: 8vh;
+    background-color: white;
+    margin-top: 1.5vh;
+    margin-right: 1vw;
+    text-align: center;
+    color: #2f393f;
+    border: solid 1.5px #2f393f;
+  }
+}
+
+}
+
+
+
+@media screen and (min-width:768px){
+  .content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
+
+  .content .auto {
+    grid-column: 1;
+    background-color: #ed5822;
+    padding: 1vh 4vw;
+    border-radius: 13px;
+    text-align: center;
+    font-size: 1em;
+    color: #f3f3f5;
+    border-style: none;
+    margin: 4vh auto 0 20vw;
+  }
+
+  .content .manu {
+    background-color: #ed5822;
+    padding: 1vh 4vw;
+    border-radius: 13px;
+    text-align: center;
+    font-size: 1em;
+    color: #f3f3f5;
+    border-style: none;
+    margin: 4vh 20vw 0 auto;
+
+  }
+
+
+  .sec2 .content2 .icon {
+    width: 15vw;
+    height: 8vh;
+    background-color: white;
+    margin-top: 1.5vh;
+    margin-right: 5vw;
+    text-align: center;
+    padding-top: 2.5vh;
+    color: #2f393f;
+    border: solid 1.5px #2f393f;
+    grid-column: 2;
+  }
 }
