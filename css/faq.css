@@ -243,6 +243,16 @@ textarea{
   pointer-events: all;
 }
 
+@media screen and (min-width:767px) {
+  .lits{
+    text-align: center;
+  }
+.lits2{
+  text-align: center;
+}
+
+}
+
 @media screen and (min-width:1000px) {
   .wrapper-c{
         height: 50vh;
@@ -291,8 +301,7 @@ textarea{
     height: 20%;
     border: solid 1px;
     margin: 3vh 20vw 0 20vw;
-    display: grid;
-    grid-template-columns: 50% 50%;
+
     }
 
     .container li {
@@ -304,12 +313,14 @@ textarea{
 
     .lits {
       margin: 1.5vh 2vw;
-      display: grid;
+
+
 
 
     }
     .lits2{
       margin-left: 5vw;
-      display: grid;
+
+
     }
 }
