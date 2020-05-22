@@ -15,7 +15,7 @@
 
 <body>
   <nav>
-    <a href="home" ><img class="logo" src="billeder/logo-uden-tekst.png" alt="robot nordics logo"></a>
+    <a href="home"><img class="logo" src="billeder/logo-uden-tekst.png" alt="robot nordics logo"></a>
     <ul class="nav-links">
       <li> <a href="#"> Forside </a></li>
       <li> <a href="#"> Manual</a></li>
@@ -28,26 +28,105 @@
       <div class="line2"> </div>
       <div class="line3"> </div>
     </div>
-    <a href="home" ><img class="logo1" src="billeder/logo-uden-tekst.png" alt="robot nordics logo"></a>
-      <ul class="nav-links">
+    <a href="home"><img class="logo1" src="billeder/logo-uden-tekst.png" alt="robot nordics logo"></a>
+    <ul class="nav-links">
   </nav>
 
   <main>
     <h1>Palletering</h1>
-    <button type="button" name="button"></button>
     <div class="divider"></div>
-    <h2>Gemte mønstre</h2>
-    <div class="divider"></div>
-    <h2>Opret ny pallemønster</h2>
-    <div class="divider"></div>
-    <h3>Gemte pakker</h3>
-    <div class="divider"></div>
-    <h3>Opret ny pakkestørrelse</h3>
-    <div class="divider"></div>
-    <section class="sec1">
+
+    <section>
+      <button type="button" class="collapsible">Gemte mønstre</button>
       <div class="content">
-        <div class="enhed"> Opret ny pakke</div>
-        <div class="icon">&#10010;</div>
+        <p> test teste tes t es t est es t es t se ts t</p>
       </div>
+
     </section>
+
+
+    <section>
+      <button type="button" class="collapsible">Opret nyt pallemønster</button>
+      <div class="content1">
+        <p class="mnavn"> Mønster navn</p>
+        <input class="mnavn1" type="text" name="name" placeholder="Mønster navn">
+
+        <p class="ptype"> Palle type </p>
+        <input class="ptype1" type="text" name="name" placeholder="Palle type">
+
+<!-- Alt inden fyldning -->
+        <p class="fyldning"> Fyldning </p>
+        <p class="findhold"> Højde </p>
+        <input class="fkasse" type="text" name="name" placeholder="100">
+
+        <p class="findhold"> Procent </p>
+        <input class="fkasse" type="text" name="name" placeholder="60%">
+
+        <p class="findhold"> Tilladt udhæng </p>
+        <input class="fkasse" type="text" name="name" placeholder="0">
+
+<!-- Alt inden palle dimensioner -->
+        <p class="pdim"> Palle dimensioner </p>
+        <p class="pindhold"> Højde </p>
+        <input class="pkasse" type="text" name="name" placeholder="50">
+
+        <p class="pindhold"> Længde </p>
+        <input class="pkasse" type="text" name="name" placeholder="150">
+
+        <p class="pindhold"> Bredde </p>
+        <input class="pkasse" type="text" name="name" placeholder="150">
+
+<!-- Checkboxes venstre -->
+        <p class="check1"> Blandede lag </p>
+        <input class="ibox1" type="checkbox">
+
+        <p class="check1"> Kun fulde lag </p>
+        <input class="ibox1" type="checkbox">
+
+        <p class="check1"> Bind lag </p>
+        <input class="ibox1" type="checkbox">
+
+<!-- Checkboxes højre -->
+        <p class="check2"> Center load </p>
+        <input class="ibox2" type="checkbox">
+
+        <p class="check2"> Kun fulde lag </p>
+        <input class="ibox2" type="checkbox">
+
+        <p class="check2"> Bind lag </p>
+        <input class="ibox2" type="checkbox">
+
+<!-- Sensor max margin -->
+        <p class="smaxmar"> Sensor max margin </p>
+        <p class="udregni"> Udregn i </p>
+      </div>
+
+    </section>
+    <button type="button" class="collapsible"> Gemte pakker</button>
+    <div class="content1">
+      <p> aknknposdaaaaaaaaaaaaaaaaaa </p>
+    </div>
+  </section>
+
+<section class=section1>
+  <button type="button" class="collapsible"> Produktpakning</button>
+  <div class="content1">
+
+    <p class="pnavn"> Produktnavn </p>
+    <input class="pnavn1" type="text" name="name" placeholder="Produkt navn #1">
+
+    <p class="pnavn"> Antal produkter </p>
+    <input class="pnavn1" type="text" name="name" placeholder="10 stk.">
+
+    <p class="pform"> Pakke form </p>
+
+    <p class="pakker"> Pakke radius </p>
+    <input class="prindhold" type="text" name="name" placeholder="Radius">
+
+    <p class="pakkeh"> Pakke højde </p>
+    <input class="phindhold" type="text" name="name" placeholder="Højde">
+    </div>
+  </div>
+</section>
+
   </main>
