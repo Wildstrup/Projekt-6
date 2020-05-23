@@ -25,7 +25,7 @@ left.addEventListener('click', function() {
 });
 
 right.addEventListener('click', function() {
-  index = (index < 4 - 1) ? index+1 : 3;
+  index = (index < 4 - 1) ? index +1 : 3;
   document.querySelector('.controls .selected').classList.remove('selected');
   indicatorParent.children[index].classList.add('selected');
   slider.style.transform = 'translateX(' + (index) * -25 + '%)';
