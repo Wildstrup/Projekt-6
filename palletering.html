@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <script src="js/collapsible.js" defer></script>
   <script src="js/nav.js" defer> </script>
+  <script src="js/popup.js" defer></script>
   <title>NAVIGATION</title>
 </head>
 
@@ -97,8 +98,26 @@
         <input class="ibox2" type="checkbox">
 
 <!-- Sensor max margin -->
-        <p class="smaxmar"> Sensor max margin </p>
-        <p class="udregni"> Udregn i </p>
+
+
+        <p class="mnavn"> Positiv </p>
+        <input class="mnavn1" type="text" name="name" placeholder="10">
+
+        <p class="ptype"> Negativ </p>
+        <input class="ptype1" type="text" name="name" placeholder="10">
+
+        <button data-popup-target="#popup" class="form-btn">Gem</button>
+        <div class="popup" id="popup">
+          <div class="popup-header">
+            <div class="title">Dit mønster er gemt</div>
+            <button data-close-button class="close-button">&times; </button>
+          </div>
+        </div>
+        <div id="overlay"></div>
+      </div>
+        </div>
+
+
       </div>
 
     </section>
@@ -125,6 +144,20 @@
 
     <p class="pakkeh"> Pakke højde </p>
     <input class="phindhold" type="text" name="name" placeholder="Højde">
+
+    <button data-popup-target="#popup" class="form-btn">Gem</button>
+    <div class="popup" id="popup">
+      <div class="popup-header">
+        <div class="title">Din pakke er gemt</div>
+        <button data-close-button class="close-button">&times; </button>
+      </div>
+    </div>
+    <div id="overlay"></div>
+  </div>
+    </div>
+
+    
+
     </div>
   </div>
 </section>
