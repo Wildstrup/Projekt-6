@@ -16,7 +16,6 @@ h1 {
 
 .carousel {
   border: 2px solid #ccc;
-  height: 80vh;
   position: relative;
   overflow: hidden;
 }
@@ -41,15 +40,15 @@ h1 {
 
 .slider section .ptext{
   position: relative;
-  top: 8%;
-  margin-left: -17vw;
+  margin: 5vh -32.5vw;
+  width: 90%;
   font-size: 1.125em;
 }
 
 
 .controls .arrow {
   position: absolute;
-  top: 75.2vh;
+  bottom: -2vh;
   transform: translateY(-50%);
   cursor: pointer;
 }
@@ -98,9 +97,13 @@ font-size: 40px;
 
   .slider section .ptext{
     position: relative;
-    top: 15%;
-    margin-left: -15.5vw;
+    margin: 5vh -17.5vw;
+    width: 90%;
     font-size: 1.125em;
+  }
+
+  .controls .arrow {
+    bottom: 0vh;
   }
 
   .arrow.right {
@@ -130,8 +133,8 @@ font-size: 40px;
 
   .slider section .ptext{
     position: relative;
-    top: 15%;
-    margin-left: -7vw;
+    margin: 5vh -17.5vw;
+    width: 90%;
     font-size: 1.125em;
   }
 
