@@ -10,7 +10,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <script src="js/collapsible.js" defer></script>
   <script src="js/nav.js" defer> </script>
+  <script src="js/dropdown1.js" defer></script>
+  <script src="js/dropdown.js" defer></script>
   <script src="js/popup.js" defer></script>
+
   <title>NAVIGATION</title>
 </head>
 
@@ -40,8 +43,37 @@
     <section>
       <button type="button" class="collapsible">Gemte mønstre</button>
       <div class="content">
-        <p> test teste tes t es t est es t es t se ts t</p>
-      </div>
+        <div class="container">
+
+          <div class="select-box">
+            <div class="options-container active">
+
+              <div class="option">
+                <input type="radio" class"radio" id="kiosk" name="category">
+                <label for="kiosk">Kiosk Palle</label>
+              </div>
+
+              <div class="option">
+                <input type="radio" class"radio" id="euro" name="category">
+                <label for="euro">Europa Palle</label>
+              </div>
+
+              <div class="option">
+                <input type="radio" class"radio" id="butik" name="category">
+                <label for="butik">Butiks palle</label>
+              </div>
+
+
+            </div>
+
+            <div class="selected">vælg et mønster
+            </div>
+
+          </div>
+
+
+
+        </div>
 
     </section>
 
@@ -49,14 +81,24 @@
     <section>
       <button type="button" class="collapsible">Opret nyt pallemønster</button>
       <div class="content1">
+
+
         <p class="mnavn"> Mønster navn</p>
         <input class="mnavn1" type="text" name="name" placeholder="Mønster navn">
 
         <p class="ptype"> Palle type </p>
         <input class="ptype1" type="text" name="name" placeholder="Palle type">
 
-<!-- Alt inden fyldning -->
+        <!-- Alt inden for fyldning -->
         <p class="fyldning"> Fyldning </p>
+
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Mål i cm</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#home">Mål i mm</a>
+
+          </div>
+        </div>
         <p class="findhold"> Højde </p>
         <input class="fkasse" type="text" name="name" placeholder="100">
 
@@ -66,7 +108,7 @@
         <p class="findhold"> Tilladt udhæng </p>
         <input class="fkasse" type="text" name="name" placeholder="0">
 
-<!-- Alt inden palle dimensioner -->
+        <!-- Alt inden palle dimensioner -->
         <p class="pdim"> Palle dimensioner </p>
         <p class="pindhold"> Højde </p>
         <input class="pkasse" type="text" name="name" placeholder="50">
@@ -77,7 +119,7 @@
         <p class="pindhold"> Bredde </p>
         <input class="pkasse" type="text" name="name" placeholder="150">
 
-<!-- Checkboxes venstre -->
+        <!-- Checkboxes venstre -->
         <p class="check1"> Blandede lag </p>
         <input class="ibox1" type="checkbox">
 
@@ -87,7 +129,7 @@
         <p class="check1"> Bind lag </p>
         <input class="ibox1" type="checkbox">
 
-<!-- Checkboxes højre -->
+        <!-- Checkboxes højre -->
         <p class="check2"> Center load </p>
         <input class="ibox2" type="checkbox">
 
@@ -97,7 +139,7 @@
         <p class="check2"> Bind lag </p>
         <input class="ibox2" type="checkbox">
 
-<!-- Sensor max margin -->
+        <!-- Sensor max margin -->
 
 
         <p class="mnavn"> Positiv </p>
@@ -115,7 +157,7 @@
         </div>
         <div id="overlay"></div>
       </div>
-        </div>
+      </div>
 
 
       </div>
@@ -125,41 +167,54 @@
     <div class="content1">
       <p> aknknposdaaaaaaaaaaaaaaaaaa </p>
     </div>
-  </section>
+    </section>
 
-<section class=section1>
-  <button type="button" class="collapsible"> Produktpakning</button>
-  <div class="content1">
+    <section class=section1>
+      <button type="button" class="collapsible"> Produktpakning</button>
+      <div class="content1">
 
-    <p class="pnavn"> Produktnavn </p>
-    <input class="pnavn1" type="text" name="name" placeholder="Produkt navn #1">
+        <p class="pnavn"> Produktnavn </p>
+        <input class="pnavn1" type="text" name="name" placeholder="Produkt navn #1">
 
-    <p class="pnavn"> Antal produkter </p>
-    <input class="pnavn1" type="text" name="name" placeholder="10 stk.">
+        <p class="pnavn"> Antal produkter </p>
+        <input class="pnavn1" type="text" name="name" placeholder="10 stk.">
 
-    <p class="pform"> Pakke form </p>
+        <p class="pform"> Pakke form </p>
 
-    <p class="pakker"> Pakke radius </p>
-    <input class="prindhold" type="text" name="name" placeholder="Radius">
+        <div class="dropdown1">
+          <button onclick="myFunction()" class="dropbtn1">Mål i cm</button>
+          <div id="myDropdown1" class="dropdown-content1">
+            <a href="#home">Mål i mm</a>
 
-    <p class="pakkeh"> Pakke højde </p>
-    <input class="phindhold" type="text" name="name" placeholder="Højde">
+          </div>
+        </div>
 
-    <button data-popup-target="#popup" class="form-btn">Gem</button>
-    <div class="popup" id="popup">
-      <div class="popup-header">
-        <div class="title">Din pakke er gemt</div>
-        <button data-close-button class="close-button">&times; </button>
+
+        <p class="pakker"> Pakke radius </p>
+
+
+        <input class="prindhold" type="text" name="name" placeholder="Radius">
+
+
+
+        <p class="pakkeh"> Pakke højde </p>
+        <input class="phindhold" type="text" name="name" placeholder="Højde">
+
+        <button data-popup-target="#popup" class="form-btn">Gem</button>
+        <div class="popup" id="popup">
+          <div class="popup-header">
+            <div class="title">Din pakke er gemt</div>
+            <button data-close-button class="close-button">&times; </button>
+          </div>
+        </div>
+        <div id="overlay"></div>
       </div>
-    </div>
-    <div id="overlay"></div>
-  </div>
-    </div>
+      </div>
 
-    
 
-    </div>
-  </div>
-</section>
+
+      </div>
+      </div>
+    </section>
 
   </main>
