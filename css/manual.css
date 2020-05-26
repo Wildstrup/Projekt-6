@@ -47,7 +47,7 @@ h1 {
 
 .controls .arrow {
   position: absolute;
-  bottom: -2vh;
+  bottom: -2.3vh;
   transform: translateY(-50%);
   cursor: pointer;
 }
