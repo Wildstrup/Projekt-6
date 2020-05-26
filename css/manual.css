@@ -40,7 +40,7 @@ h1 {
 
 .slider section .ptext {
   position: relative;
-  margin: 5vh -32.5vw;
+  margin: 7vh -32.5vw;
   width: 90%;
   font-size: 1.125em;
 }
@@ -87,7 +87,7 @@ h1 {
   background: #ed5822;
 }
 
-@media screen and (min-width:801px) {
+@media screen and (min-width:768px) {
   .slider section .ptitel {
     margin: 2%;
     font-weight: bold;
@@ -96,13 +96,13 @@ h1 {
 
   .slider section .ptext {
     position: relative;
-    margin: 5vh -17.5vw;
+    margin: 5vh -18.5vw;
     width: 90%;
     font-size: 1.125em;
   }
 
   .controls .arrow {
-    bottom: 0vh;
+    bottom: -1.5vh;
   }
 
   .arrow.right {
@@ -115,7 +115,7 @@ h1 {
 
   .controls ul {
     position: absolute;
-    bottom: 3vh;
+    bottom: 2vh;
     left: 50%;
     transform: translate(-50%);
     list-style: none;
