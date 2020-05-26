@@ -13,6 +13,7 @@ overlay.addEventListener('click', () => {
   const popups = document.querySelectorAll('.popup.active')
   popups.forEach(popup => {
     closePopup(popup)
+    location.reload()
   })
 })
 
@@ -20,6 +21,7 @@ closePopupButtons.forEach(button => {
   button.addEventListener('click', () => {
     const popup = button.closest('.popup')
     closePopup(popup)
+    location.reload()
   })
 })
 
