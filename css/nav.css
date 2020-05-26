@@ -12,7 +12,6 @@ nav {
   min-height: 9vh;
   background-color: #f3f3f5;
   border-bottom: solid #2f393f;
-
 }
 
 .logo {
@@ -48,7 +47,7 @@ nav {
   opacity: 85%;
 }
 
-.nav-links .current{
+.nav-links .current {
   opacity: 1;
 }
 
@@ -72,25 +71,25 @@ nav {
     width: 70%;
   }
 
-.nav-links .mfors{
-  margin-left: 23vw;
-}
+  .nav-links .mfors {
+    margin-left: 23vw;
+  }
 
-.logo{
-  margin-left: 4vw;
-}
+  .logo {
+    margin-left: 4vw;
+  }
+
   .logo1 {
     display: none;
   }
 }
 
 @media screen and (max-width:800px) {
-
   .logo {
     display: none;
   }
 
-  .logo1{
+  .logo1 {
     height: 6vh;
     display: block;
     margin: auto;
@@ -111,8 +110,6 @@ nav {
     transition: transform 0.5s ease-in;
     border-right: solid 2px #2f393f;
     background-color: #f3f3f5;
-
-
   }
 
   .nav-links a {
@@ -125,7 +122,8 @@ nav {
 
   .burger {
     display: block;
-    margin-right: 29vw;;
+    margin-right: 29vw;
+    ;
   }
 
   .border div {

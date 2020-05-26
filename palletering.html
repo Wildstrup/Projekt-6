@@ -14,14 +14,14 @@
   <script src="js/dropdown.js" defer></script>
   <script src="js/popup.js" defer></script>
 
-  <title>NAVIGATION</title>
+  <title>Palletering</title>
 </head>
 
 <body>
   <nav>
-    <a href="home"><img class="logo" src="billeder/logo-uden-tekst.png" alt="robot nordics logo"></a>
+    <a href="index.html"><img class="logo" src="billeder/logo-uden-tekst.png" alt="robot nordics logo"></a>
     <ul class="nav-links">
-      <li> <a href="forside.html"> Forside </a></li>
+      <li> <a href="index.html"> Forside </a></li>
       <li> <a href="status.html"> Status </a></li>
       <li> <a class="current" href="palletering.html"> Palletering </a></li>
       <li> <a href="manual.html"> Manual</a></li>
@@ -50,12 +50,12 @@
 
               <div class="option">
                 <input type="radio" class"radio" id="kiosk" name="category">
-                <label for="kiosk">Kiosk Palle</label>
+                <label for="kiosk">Kiosk palle</label>
               </div>
 
               <div class="option">
                 <input type="radio" class"radio" id="euro" name="category">
-                <label for="euro">Europa Palle</label>
+                <label for="euro">Europa palle</label>
               </div>
 
               <div class="option">
@@ -66,10 +66,19 @@
 
             </div>
 
-            <div class="selected">vælg et mønster
+            <div class="selected">Vælg et mønster
             </div>
 
           </div>
+
+          <button data-popup-target="#popup" class="form-btn1">Load</button>
+          <div class="popup" id="popup">
+            <div class="popup-header">
+              <div class="title">Dit mønster er indlæst</div>
+              <button data-close-button class="close-button">&times; </button>
+            </div>
+          </div>
+          <div id="overlay"></div>
 
 
 
@@ -142,10 +151,10 @@
         <!-- Sensor max margin -->
 
 
-        <p class="mnavn"> Positiv </p>
+        <p class="mnavn"> Sensor max margin positiv </p>
         <input class="mnavn1" type="text" name="name" placeholder="10">
 
-        <p class="ptype"> Negativ </p>
+        <p class="sensnega"> Sensor max margin negativ </p>
         <input class="ptype1" type="text" name="name" placeholder="10">
 
         <button data-popup-target="#popup" class="form-btn">Gem</button>
@@ -165,7 +174,48 @@
     </section>
     <button type="button" class="collapsible"> Gemte pakker</button>
     <div class="content1">
-      <p> aknknposdaaaaaaaaaaaaaaaaaa </p>
+
+      <div class="container">
+
+        <div class="select-box">
+          <div class="options-container active">
+
+            <div class="option">
+              <input type="radio" class"radio" id="kiosk" name="category">
+              <label for="kiosk">Stor pakke</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" class"radio" id="euro" name="category">
+              <label for="euro">Mellem pakke</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" class"radio" id="butik" name="category">
+              <label for="butik">Lille pakke</label>
+            </div>
+
+
+          </div>
+
+          <div class="selected">Vælg en Pakke
+          </div>
+
+        </div>
+
+        <button data-popup-target="#popup" class="form-btn1">Load</button>
+        <div class="popup" id="popup">
+          <div class="popup-header">
+            <div class="title">Din pakke er indlæst</div>
+            <button data-close-button class="close-button">&times; </button>
+          </div>
+        </div>
+        <div id="overlay"></div>
+
+
+
+      </div>
+
     </div>
     </section>
 
@@ -214,7 +264,20 @@
 
 
       </div>
+
       </div>
+
     </section>
+
+
+
+    <button data-popup-target="#popup" class="form-btn3">Bekræft</button>
+    <div class="popup" id="popup">
+      <div class="popup-header">
+        <div class="title1">Vil du bekræfte dit valg af mønstre og pakker?</div>
+        <button data-close-button class="close-button">&times; </button>
+      </div>
+    </div>
+    <div id="overlay"></div>
 
   </main>

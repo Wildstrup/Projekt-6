@@ -32,19 +32,18 @@ h1 {
   display: flex;
 }
 
-.slider section .ptitel{
+.slider section .ptitel {
   margin: 2%;
   font-weight: bold;
   font-size: 1.375em;
 }
 
-.slider section .ptext{
+.slider section .ptext {
   position: relative;
   margin: 5vh -32.5vw;
   width: 90%;
   font-size: 1.125em;
 }
-
 
 .controls .arrow {
   position: absolute;
@@ -54,7 +53,7 @@ h1 {
 }
 
 .controls .arrow i {
-font-size: 40px;
+  font-size: 40px;
 }
 
 .arrow.right {
@@ -85,17 +84,17 @@ font-size: 40px;
 }
 
 .controls ul li.selected {
-  background: #ed5822   ;
+  background: #ed5822;
 }
 
 @media screen and (min-width:801px) {
-  .slider section .ptitel{
+  .slider section .ptitel {
     margin: 2%;
     font-weight: bold;
     font-size: 1.5em;
   }
 
-  .slider section .ptext{
+  .slider section .ptext {
     position: relative;
     margin: 5vh -17.5vw;
     width: 90%;
@@ -125,13 +124,13 @@ font-size: 40px;
 }
 
 @media screen and (min-width:1001px) {
-  .slider section .ptitel{
+  .slider section .ptitel {
     margin: 2%;
     font-weight: bold;
     font-size: 1.875em;
   }
 
-  .slider section .ptext{
+  .slider section .ptext {
     position: relative;
     margin: 5vh -17.5vw;
     width: 90%;

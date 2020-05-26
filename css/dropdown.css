@@ -14,7 +14,8 @@
 }
 
 .collapsible:after {
-  content: '\002B';/* unicode symbol for "plus" tegn (+) */
+  content: '\002B';
+  /* unicode symbol for "plus" tegn (+) */
   color: #2f393f;
   font-weight: bold;
   float: right;
@@ -22,7 +23,8 @@
 }
 
 .active:after {
-  content: "\2212";/* unicode symbol for "minus" tegn (-) */
+  content: "\2212";
+  /* unicode symbol for "minus" tegn (-) */
 }
 
 .content {
@@ -35,7 +37,8 @@
 }
 
 .collapsible1:after {
-  content: '\002B';/* unicode symbol for "plus" tegn (+) */
+  content: '\002B';
+  /* unicode symbol for "plus" tegn (+) */
   color: #2f393f;
   font-weight: bold;
   float: right;
@@ -52,12 +55,12 @@
   background-color: #f1f1f1;
 }
 
-.mnavn{
+.mnavn {
   font-size: 16pt;
   margin: 2vh 0 1vh 5vw;
 }
 
-.mnavn1{
+.mnavn1 {
   display: grid;
   grid-column: 1;
   border-radius: 3px;
@@ -67,12 +70,12 @@
   border-width: 1px;
 }
 
-.ptype{
+.ptype {
   font-size: 16pt;
   margin: -5vh 5vw 1vh 0vw;
 }
 
-.ptype1{
+.ptype1 {
   display: grid;
   grid-column: 2;
   border-radius: 3px;
@@ -106,7 +109,7 @@
   background-color: #f1f1f1;
   min-width: 160px;
   overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -117,6 +120,10 @@
   display: block;
 }
 
-.dropdown a:hover {background-color: #ddd;}
+.dropdown a:hover {
+  background-color: #ddd;
+}
 
-.show {display: block;}
+.show {
+  display: block;
+}
