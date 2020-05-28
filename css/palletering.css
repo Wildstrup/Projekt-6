@@ -457,7 +457,7 @@ h3 {
 
 .pform {
   margin-top: 4vh;
-  margin-left: 3vw;
+  margin-left: 5vw;
   font-size: 16pt;
   font-weight: bold;
 }
@@ -485,7 +485,7 @@ h3 {
 .dropbtn1 {
   display: grid;
   grid-column: 1;
-  margin-left: 10vw;
+  margin-left: 24vw;
   margin-bottom: 1vw;
   margin-top: 3.5vh;
   background-color: #ed5822;
