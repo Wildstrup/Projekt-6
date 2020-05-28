@@ -378,7 +378,6 @@ h3 {
   grid-row: 12;
   text-align: left;
   margin-top: 5vh;
-  margin-left: 5vw;
   font-size: 14pt;
 }
 
@@ -386,7 +385,6 @@ h3 {
   display: grid;
   grid-column: 2;
   grid-row: 13;
-  margin-left: 5vw;
 }
 
 .check3 {
@@ -395,7 +393,6 @@ h3 {
   grid-row: 14;
   text-align: left;
   margin-top: 5vh;
-  margin-left: 5vw;
   font-size: 14pt;
 }
 
@@ -403,7 +400,6 @@ h3 {
   display: grid;
   grid-column: 2;
   grid-row: 15;
-  margin-left: 5vw;
 }
 
 .check4 {
@@ -412,7 +408,6 @@ h3 {
   grid-row: 16;
   text-align: left;
   margin-top: 5vh;
-  margin-left: 5vw;
   font-size: 14pt;
 }
 
@@ -420,7 +415,6 @@ h3 {
   display: grid;
   grid-column: 2;
   grid-row: 17;
-  margin-left: 5vw;
 }
 
 .nudge{
